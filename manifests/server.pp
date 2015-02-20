@@ -139,7 +139,6 @@ class rabbitmq::server (
     # delete the default guest user
     rabbitmq_user{ 'guest':
       ensure   => absent,
-      provider => 'rabbitmqctl',
     }
   }
 }
